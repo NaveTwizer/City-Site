@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>City Site</title>
+    <style type="text/css">
+        body {
+            background-image: url(../images/Tel-Aviv-Background.jpg);
+        }
+
+        #main-header {
+            color: black;
+            font-size: 500%;
+            text-decoration: underline;
+            text-align: center;
+            text-shadow: 0px 0px 5px yellow, 0px -5px 5px red;
+        }
+
+        #main-div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 5px solid black;
+            padding: 30px;
+        }
+        .Cities{
+            font-size:400%;
+            color:black;
+        }
+        a{
+            color:white;
+        }
+        #contact-div{
+            position:absolute;
+            top:30%;
+            left:50%;
+            transform:translate(-50%, -50%);
+        }
+        #contact-div a{
+            font-size:250%;
+            text-decoration:underline;
+        }
+        /*a:hover{
+            color:mediumvioletred;
+            font-size:115%;
+        }*/
+    </style>
+</head>
+<body>
+    <h1 id="main-header">ערים ישראליות</h1>
+
+    <div id="main-div">
+        <ul>
+            <li class="Cities">
+                <a href="Jerusalem.html" target="_blank">
+                ירושלים
+                </a>
+            </li>
+            <li class="Cities">
+                <a href="TelAviv.html" target="_blank">
+                    תל אביב
+                </a>
+            </li>
+            <li class="Cities">
+                <a href ="Haifa.html" target="_blank">
+                    חיפה
+                </a>
+            </li>
+        </ul>
+    </div>
+    <br />
+    <div id="contact-div">
+        <a id="contact-link" href="mailto:navenavejopa@gmail.com">!צור קשר</a>
+    </div>
+
+</body>
+</html>

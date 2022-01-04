@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ירושלים</title>
+    <style type="text/css">
+        body{
+            background-image:url(../images/Jerusalem-Background.webp);
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+        #main-header{
+            text-align:center;
+            font-size:500%;
+            text-decoration:underline;
+        }
+        #p1{
+            font-size:35px;
+        }
+        #images-div img{
+            border: 3px solid black;
+            border-radius:25%;
+        }
+        marquee {
+            font-size:400%;
+        }
+        table{
+            border-collapse:collapse;
+        }
+        #content-div {
+            border: 3px solid black;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        #content-div a {
+            font-size: 250%;
+            color: black;
+        }
+        .switching-images {
+            animation: anim1 ease-in-out 10s infinite;
+            width: 350px;
+            height: 350px;
+            background-size: cover;
+        }
+        @keyframes anim1 {
+            0% {
+                background-image: url("../images/Jerusalem-1.png");
+            }
+
+            20% {
+                background-image: url("../images/Jerusalem-2.png");
+            }
+
+            40% {
+                background-image: url("../images/Jerusalem-3.png");
+            }
+
+            60% {
+                background-image: url("../images/Jerusalem-4.png");
+            }
+
+            80% {
+                background-image: url("../images/Gallery/Jerusalem/image-1.jfif");
+            }
+
+            100% {
+                background-image: url("../images/Jerusalem-1.png");
+            }
+        }
+    </style>
+</head>
+<body dir="rtl">
+    <h1 id="main-header">ירושלים</h1>
+    <p id="p1">
+        יְרוּשָׁלַיִם[3] (בערבית: الْقُدْس, הגייה: אל-קֻדְס (מידע • עזרה), או أُورُشَلِيم (הגייה: אוּרֻשַׁלִים)) היא עיר הבירה של מדינת ישראל ושל מחוז ירושלים, והעיר הגדולה ביותר בישראל בגודל האוכלוסייה. נכון לשנת 2021, מתגוררים בה כ-958 אלף תושבים[4]. בירושלים שוכנים מוסדות הממשל של ישראל: הכנסת, בית המשפט העליון, משכן הנשיא, בית ראש הממשלה ורוב משרדי הממשלה. ירושלים שוכנת בהרי יהודה, על קו פרשת המים הארצי של ארץ ישראל, בין הים התיכון וים המלח, ברום של 570[5] עד 857[6] מטרים מעל פני הים.
+    </p>
+    <div id="images-div">
+        <marquee direction="left" scrollamount="20">
+            ירושלים, בירת ישראל
+        </marquee>
+        <table align="center">
+            <tr>
+                <th>
+                    <img src="../images/Jerusalem-1.png" />
+                </th>
+                <th>
+                    <img src="../images/Jerusalem-2.png" />
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../images/Jerusalem-3.png" />
+                </td>
+                <td>
+                    <img src="../images/Jerusalem-4.png" />
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+    <div id="content-div">
+        <a
+           href="https://he.wikipedia.org/wiki/%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+           target="_blank"
+        >
+            ויקיפדיה
+        </a>
+        <br />
+        <a
+           href="https://www.jerusalem.muni.il/"
+           target="_blank"
+        >
+            אתר העיר
+        </a>
+    </div>
+    <div id="images-link-div">
+        <a href="Sub-Pages/Jerusalem/img1-page.html" target="_blank">
+            <img src="../images/Gallery/Jerusalem/img1.png" height="350" width="350" />
+        </a>
+        <a href="Sub-Pages/Jerusalem/img2-page.html" target="_blank">
+            <img src="../images/Gallery/Jerusalem/img2.png" width="350" height="350" />
+        </a>
+    </div>
+    <br /> <br />
+    <div id="switching-images-div">
+        <table align="center">
+            <tr>
+                <th class="switching-images"></th>
+                <th class="switching-images"></th>
+                <th class="switching-images"></th>
+                <th class="switching-images"></th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

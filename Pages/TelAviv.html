@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>תל אביב</title>
+    <style type="text/css">
+        body{
+            background-image:url(../images/Tel-Aviv-2.png);
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+        #main-header{
+            color:black;
+            text-align:center;
+            font-size:500%;
+            text-decoration:underline;
+        }
+        #p1{
+            font-size:350%;
+            color:white;
+        }
+
+        #images-div img {
+            border: 3px solid black;
+            border-radius: 25%;
+        }
+
+        marquee {
+            font-size: 400%;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        #content-div{
+            border:3px solid black;
+            padding-bottom:0;
+            margin-bottom:0;
+        }
+        #content-div a{
+            font-size:250%;
+            color:white;
+        }
+        .switching-images {
+            animation: anim1 ease-in-out 10s infinite;
+            width: 350px;
+            height: 350px;
+            background-size: cover;
+        }
+        @keyframes anim1 {
+            0% {
+                background-image: url("../images/Tel-Aviv-1.png");
+            }
+
+            20% {
+                background-image: url("../images/Tel-Aviv-2.png");
+            }
+
+            40% {
+                background-image: url("../images/Tel-Aviv-3.png");
+            }
+
+            60% {
+                background-image: url("../images/Tel-Aviv-4.png");
+            }
+
+            80% {
+                background-image: url("../images/Tel-Aviv-Background.jpg");
+            }
+
+            100% {
+                background-image: url("../images/Tel-Aviv-1.png");
+            }
+        }
+    </style>
+</head>
+<body dir="rtl">
+    <h1 id="main-header">תל אביב</h1>
+    <p id="p1">
+        תל אביב-יפו (בערבית: تل أَبيب-يافا), המוכרת לרוב כתל אביב, היא עיר במחוז תל אביב בישראל, במישור החוף הדרומי, המרכזית מבין ערי גוש דן והשנייה בגודל אוכלוסייתה בישראל. תל אביב חברה בארגון פורום ה־15. תל אביב-יפו שוכנת לחוף הים התיכון על אדמת כורכר. בשטחה זורמים נחל הירקון ונחל איילון. היא גובלת ממערב בים התיכון; מדרום בערים בת ים וחולון; ממזרח בערים רמת גן, גבעתיים, בני ברק ופתח תקווה; ומצפון בערים רמת השרון והרצליה.
+    </p>
+    <marquee direction="left" scrollamount="20" width="100%">
+        תל אביב
+    </marquee>
+    <div id="images-div">
+        <table align="center">
+            <tr>
+                <th>
+                    <img src="../images/Tel-Aviv-1.png" />
+                </th>
+                <th>
+                    <img src="../images/Tel-Aviv-2.png" />
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../images/Tel-Aviv-3.png" />
+                </td>
+                <td>
+                    <img src="../images/Tel-Aviv-4.png" />
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+    <br /> <br />
+    <div id="content-div">
+        <ul>
+            <li>
+                <a href="https://he.wikipedia.org/wiki/%D7%AA%D7%9C_%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95"
+                   target="_blank">
+                    ויקיפדיה
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tel-aviv.gov.il/Pages/HomePage.aspx"
+                   target="_blank">
+                    אתר העיר
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="images-link-div">
+        <a href="Sub-Pages/Tel-Aviv/img1-page.html" target="_blank">
+            <img src="../images/Gallery/Tel-Aviv/img1.png" width="400" height="400" />
+        </a>
+        <a href="Sub-Pages/Tel-Aviv/img2-page.html" target="_blank">
+            <img src="../images/Gallery/Tel-Aviv/img2.png" width="400" height="400" />
+        </a>
+    </div>
+    <br /> <br />
+    <div id="changing-images-div">
+        <table align="center">
+            <tr>
+                <th class="switching-images"></th>
+                <th class="switching-images"></th>
+                <th class="switching-images"></th>
+                <th class="switching-images"></th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

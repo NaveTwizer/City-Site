@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>חיפה</title>
+    <style type="text/css">
+
+        body{
+            background-image:url(../images/Haifa.png);
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+        #main-header{
+            text-align:center;
+            font-size:500%;
+            text-decoration:underline;
+        }
+        #p1{
+            font-size:350%;
+            color:#FFF;
+        }
+
+        #images-div img {
+            border: 3px solid black;
+            border-radius: 100%;
+        }
+
+        marquee {
+            font-size: 400%;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        #content-div {
+            border: 3px solid black;
+        }
+        #content-div a{
+            font-size:250%;
+            color:white;
+        }
+        .switching-images {
+            animation:anim1 ease-in-out 10s infinite;
+            width:350px;
+            height:350px;
+            background-size:cover;
+        }
+        @keyframes anim1 {
+            0% {
+                background-image:url("../images/Haifa-1.png");
+            }
+            20% {
+                background-image:url("../images/Haifa-2.png");
+            }
+            40% {
+                background-image:url("../images/Haifa-3.png");
+            }
+            60% {
+                background-image:url("../images/Haifa-4.png");
+            }
+            80% {
+                background-image:url("../images/Gallery/Haifa/haifa-2.jpeg");
+            }
+            100% {
+                background-image:url("../images/Haifa-1.png");
+            }
+        }
+    </style>
+</head>
+<body dir="rtl">
+
+    <h1 id="main-header">חיפה</h1>
+    <p id="p1">
+        חֵיפָה (בערבית: حيفا) היא העיר השלישית בגודל אוכלוסייתה בישראל, בעלת אוכלוסייה מעורבת יהודית-ערבית. היא חברה בארגון פורום ה-15, משמשת מרכזה של מטרופולין חיפה (אנ'), בירת מחוז חיפה, ונחשבת בירת הצפון והמרכז העירוני הגדול בו.
+    </p>
+
+    <div id="images-div">
+        <marquee direction="left" behavior="left" scrollamount="25">
+          חיפה, העיר השלישית בגודלה בישראל
+        </marquee>
+        <table align="center">
+            <tr>
+                <th>
+                  <img src="../images/Haifa-1.png" />
+                </th>
+                <th>
+                    <img src="../images/Haifa-2.png" />
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../images/Haifa-3.png" />
+                </td>
+                <td>
+                    <img src="../images/Haifa-4.png" />
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+    <div id="content-div">
+        <a
+           href="https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%A4%D7%94"
+           target="_blank"
+        >
+            ויקיפדיה
+        </a>
+        <br />
+        <a
+           href="https://www.haifa.muni.il/"
+           target="_blank"
+        >
+            אתר העיר
+        </a>
+    </div>
+    <div id="images-link">
+        <a href="Sub-Pages/Haifa/img1-page.html" target="_blank">
+            <img src="../images/Gallery/Haifa/haifa-1.jpeg" />
+        </a>
+        <a href="Sub-Pages/Haifa/img2-page.html" target="_blank">
+            <img src="../images/Gallery/Haifa/haifa-2.jpeg" />
+        </a>
+        <a href="Sub-Pages/Haifa/img3-page.html" target="_blank">
+            <img src="../images/Gallery/Haifa/haifa-3.jpg" height="350" width="350" />
+        </a>
+    </div>
+    <br /> <br />
+    <div id="changing-images-div">
+        <table align="center"> 
+            <tr>
+                <th class="switching-images"></th>
+                <th class="switching-images"></th>
+                <th class="switching-images"></th>
+                <th class="switching-images"></th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
